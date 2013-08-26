@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TechproDebugging</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render 'devise/menu/signup' %>
+  <%= render 'devise/menu/signin' %>
+
+<%= yield %>
+
+</body>
+</html>
